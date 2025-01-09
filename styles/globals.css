@@ -1,0 +1,113 @@
+:root {
+  --color-background: #f5f5f9;
+  --color-scrollbar: rgb(224, 224, 224);
+  --color-scrollbar-hover: #bbb;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+  background: var(--color-background);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-scrollbar);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+  background: var(--color-background);
+  border-radius: 10px;
+}
+ /* html{
+  scroll-snap-type: y mandatory;
+  scroll-behavior:smooth;
+}  */
+/* section{ */
+  /* height: 100vh; */
+  /* scroll-snap-align: center; */
+/* } */
+
+body {
+  /* background-color: var(--color-background); */
+  background-color: '#f6f7f8';
+}
+
+@-webkit-keyframes click_animation {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  to {
+    -webkit-transform: scale(5);
+    transform: scale(5);
+    opacity: 0;
+  }
+}
+
+@keyframes click_animation {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  to {
+    -webkit-transform: scale(5);
+    transform: scale(5);
+    opacity: 0;
+  }
+}
+
+.footermenu{
+  color: white;
+ 
+  font-weight: 400;
+  font-size:17px;
+  text-decoration: none;
+
+}
+
+/* contact card */
+.box2{
+  box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.box2:hover{
+  transform: translateY(5px);
+  box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+
+/*clip path dr*/
+.dranim {
+  animation-name: circle;
+  animation-duration: 3s;
+  animation-iteration-count: 3;
+  /* animation: circle 3s infinite; */
+  /* background: orange; */
+  clip-path: circle(75%);
+  /* height: 200px;
+  width: 200px; */
+}
+
+@keyframes circle {
+  0% { clip-path: circle(75%); }
+  50% { clip-path: circle(25%); }
+  100% { clip-path: circle(75%); }
+}
+/* .dranim{
+  clip-path: circle(50% at 50% 50%); */
+/*  
+  clip-path: polygon(100% at 50% 50%); */
+
+  /* transition: all 2s ease; */
+  /* transition-duration: 5s; */
+
+/* }
+.dranim:hover{
+  clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+  animation:  1s;
+  } */

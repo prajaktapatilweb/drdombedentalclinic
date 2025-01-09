@@ -1,0 +1,5 @@
+User-agent: *
+
+Disallow: 
+
+Sitemap: https://www.abbaddentalclinic.com/sitemap.xml
