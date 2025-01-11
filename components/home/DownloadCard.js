@@ -14,7 +14,7 @@ const DownloadCard = ({ item }) => {
           display: 'flex',
           flexDirection: 'column',
           position: 'relative',
-          backgroundColor: 'primary.main',
+          backgroundColor: '#c8b2a7',
           borderRadius: 2,
           border: '1px #EDEDEE solid',
         }}
@@ -43,7 +43,7 @@ const DownloadCard = ({ item }) => {
             px: 1,
             color: 'primary.contrastText',
             flex: 1,
-            backgroundColor: '#90BCD5',
+            backgroundColor: '#c8b2a7',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',

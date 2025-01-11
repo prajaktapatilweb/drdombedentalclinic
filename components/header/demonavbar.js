@@ -18,8 +18,8 @@ import { fontFamily } from "../../config/theme/typography";
 
 function ResponsiveAppBar() {
 
-    const contactno1 = "9713435111";
-    const contactno2 = "9923708233"
+    const contactno1 = " 9890840340";
+    
 
     const textVariants = {
         initial: {
@@ -52,15 +52,15 @@ function ResponsiveAppBar() {
         <AppBar
             position="static"
             sx={{
-                background: { xs: `linear-gradient(rgba(1, 1, 1, 0.0), rgba(1, 1, 1, 0.7)), url("/images/nashikclinic/clinics9.webp")`, sm: `linear-gradient(rgba(1, 1, 1, 0.2), rgba(256, 256, 256, 0.2)), url("/images/nashikclinic/clinics9.webp")`, md:`linear-gradient(to right, rgba(1,1,1, 0.6) 10%, rgba(1,1,1, 0.4) 90%), url('/images/headerback1.jpg')`},
+                backgroundImage: { xs: `linear-gradient(rgba(1, 1, 1, 0.4), rgba(1, 1, 1, 0.4)), url("/images/nashikclinic/clinics9.webp")`, sm: `linear-gradient(rgba(1, 1, 1, 0.2), rgba(256, 256, 256, 0.2)), url("/images/nashikclinic/clinics9.webp")`, md:`linear-gradient(to right, rgba(1,1,1, 0.6) 10%, rgba(1,1,1, 0.4) 90%), url('/images/headerback1.jpg')`},
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
-                backgroundPosition: 'center',
+                backgroundPosition:'center',
 
             }}
         >
             <section style={{
-                background: '#4e413d', width: '100%', padding: 0, borderRadius: 0,
+                background: '#3a302e', width: '100%', padding: 0, borderRadius: 0,
             }}>
                 <Container maxWidth="xl">
                     <Box
@@ -89,7 +89,7 @@ function ResponsiveAppBar() {
 
                                 <Link href={`tel:${contactno1}`} target="_blank">
                                     <a className="nav-link-inner--text" style={{ color: 'white', marginRight: 10 }}>
-                                        9713435111
+                                    9890840340
 
                                     </a>
                                 </Link>
@@ -105,9 +105,10 @@ function ResponsiveAppBar() {
                                     <EmailTwoToneIcon />{" "}
                                 </IconButton>
                                 <Link
-                                    href={`mailto:${'abbaddentalclinic@gmail.com'}`} target="_blank">
+                                    href={`mailto:${'shape32aligners@gmail.com'}`} target="_blank">
                                     <a className="nav-link-inner--text" style={{ color: 'white' }}>
-                                        abbaddentalclinic@gmail.com
+                                    shape32aligners@gmail.com
+
                                     </a>
                                 </Link>
                             </Box>
@@ -140,7 +141,7 @@ function ResponsiveAppBar() {
 
                             <IconButton aria-label="instagram">
                                 <a
-                                    href=" https://www.instagram.com/abbaddentalclinic/"
+                                    href="https://www.instagram.com/sagardombe/"
                                     target="_blank"
                                     rel="noreferrer"
                                     aria-label="instagram"
@@ -153,7 +154,7 @@ function ResponsiveAppBar() {
 
                             <IconButton aria-label="youtube">
                                 <a
-                                    href=" https://www.youtube.com/@abbaddentalclinicnashik"
+                                    href=" https://www.youtube.com/channel/UCxI-_YXru2XT7vwf2PZC9hg"
                                     target="_blank"
                                     rel="noreferrer"
                                     aria-label="youtube"
@@ -161,7 +162,7 @@ function ResponsiveAppBar() {
                                     <YouTubeIcon sx={{ color: "white" }}></YouTubeIcon>
                                 </a>
                             </IconButton>
-                            <IconButton aria-label="justdial">
+                            {/* <IconButton aria-label="justdial">
                                 <a
                                     href="https://www.justdial.com/Nashik/Abbad-Dental-Clinic-Implant-Center-Opp-BYK-College-Next-to-Fastrack-Showroom-College-Road/0253PX253-X253-221218231157-S3D4_BZDET"
                                     target="_blank"
@@ -186,7 +187,7 @@ function ResponsiveAppBar() {
 
 
                                 </a>
-                            </IconButton>
+                            </IconButton> */}
                         </Box>
                     </Box>
                 </Container>

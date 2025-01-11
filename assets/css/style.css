@@ -211,18 +211,19 @@ section {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 45px;
-  color: #111;
+  color: white;
 }
 
 .testimonials .testimonial-item p {
   font-style: italic;
   margin: 0 15px 0 15px;
   padding: 20px 20px 60px 20px;
-  background: #B5D2E3;
+  background: #c8b2a7;
   position: relative;
   border-radius: 6px;
   position: relative;
   z-index: 1;
+
 }
 
 
@@ -662,7 +663,7 @@ section {
 }
 @media screen and (max-width: 600px) {
   .paras {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 .h8 {
@@ -674,3 +675,40 @@ section {
     font-size: 28px;
   }
 }
+
+
+/* Parallox Section */ 
+.events2 {
+  background-image: url('/images/nashikclinic/clinics8.webp') ;
+  /* background: url("../public/vision.jpg") center center no-repeat; */
+  background-size: cover;
+  position: relative;
+ 
+}
+.events2::before {
+  content: '';
+  /* background-image:linear-gradient(to right, rgba(58,37,109,0.6), rgba(23,43,77,0.9)); */
+  /* background-image:linear-gradient(to right, rgba(54,30,80,0.8), rgba(58,37,109,0.9)); */
+  /* background-color:rgba(54,30,80,0.6); */
+  /* background-color: rgba(12, 11, 10, 0.6); */
+  position: absolute;
+  /* z-index:- 1; */
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.events2 .container {
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .events2 {
+    background-attachment: fixed;
+  }
+}
+
+/* end parallox section */
+
+

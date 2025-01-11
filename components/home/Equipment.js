@@ -63,7 +63,7 @@ export default function Equipment() {
       <Box
         sx={{
           py: { xs: 6, md: 10 },
-          backgroundColor: "primary.main",
+          backgroundColor: "#e9e0db",
         }}
       >
         <Container>

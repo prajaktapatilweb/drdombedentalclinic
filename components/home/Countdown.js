@@ -59,7 +59,7 @@ const fadeUpVariants = {
             <Container sx={{
                 width:'100%',
                 backgroundColor: 'white',  py:{xs:3,sm:3,md:7},
-                mt: -15, borderRadius: 50, 
+                mt: -15, borderRadius: {xs:5,sm:3,md:50}, 
                 boxShadow:
                 'rgba(100, 50, 93, 0.25) 0px 50px 60px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 1px -2px 3px 1px inset',
               
@@ -72,15 +72,15 @@ const fadeUpVariants = {
                 <Grid container spacing={0} alignItems='center' justifyContent='center' textAlign='center'>
                     {Details.map((item, i) => (
 
-                        <Grid item xs={12} md={4}>
-                            <Grid container spacing={0} alignItems='center' justifyContent='center'>
-                                <Grid item xs={2} md={3}  textAlign='right'>
+                        <Grid item xs={12} md={4} sx={{py:{xs:1,sm:1,md:0}}}>
+                            <Grid container spacing={2} alignItems='center' justifyContent='center'>
+                                <Grid item xs={3} md={3}  textAlign='right'>
 
                                     <Avatar alt="" src="" sx={{ margin: 'auto', width: '35', height: 35, backgroundImage: 'linear-gradient(to right, rgb(116,81,63) 10%, rgb(146,102,79) 90%)', padding: 3, }}>{item.icons}</Avatar>
                                 </Grid>
 
-                                <Grid item xs={8} md={9}>
-                                        <Typography variant='h4' sx={{textAlign:'justify', color: 'primary.dark', cursor: 'pointer',fontFamily: "ABeeZee, sans-serif" }}>
+                                <Grid item xs={9} md={9}>
+                                        <Typography variant='h4' sx={{textAlign:'justify', color: 'primary.dark', cursor: 'pointer',fontFamily: "ABeeZee, sans-serif",fontSize:{xs:17,sm:18,md:22} }}>
                                             {item.title}
                                         </Typography>
                                         <Typography sx={{textAlign:'justify',}}>Vehicula quam potenti in si pretium donec ultricies</Typography>

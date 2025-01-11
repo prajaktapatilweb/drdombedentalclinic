@@ -57,7 +57,7 @@ const DrAkshay = () => {
         >
 
 
-          <Grid item xs={12} sm={5} sx={{ p: 0}}>
+          <Grid item xs={12} sm={5} sx={{ p: 3}}>
             {/* Framer Motion div with whileInView to trigger zoom and position shift */}
             <motion.div
               initial={{ scale: 0.3, y: 0 }} // Start with normal scale and no shift
@@ -70,7 +70,7 @@ const DrAkshay = () => {
             >
               
               <Image
-                src="/images/dr/drdombe3.jpg"
+                src="/images/dr/drdombe4.png"
                 alt=" Dr. Nikhil Abbad at College Road Dental Clinic"
                 width={100}
                 height={100}

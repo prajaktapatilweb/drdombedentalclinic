@@ -10,7 +10,7 @@ export default function Dentalservices() {
         {
             icons: "/images/icons/implant.png",
             icons1: "/images/icons/implant1.png",
-            title: 'Dental implants',
+            title: 'Dental Implants',
             desc:'Restore your smile with durable and natural-looking dental implants.'
         },
         {
@@ -41,7 +41,7 @@ export default function Dentalservices() {
         {
             icons: "/images/icons/root.png",
             icons1: "/images/icons/root1.png",
-            title: 'RCT (Root Canal Treatment)',
+            title: 'Root Canal Treatment',
             desc:'Relieve pain and save your tooth with our gentle root canal treatment.'
         },
         {
@@ -98,28 +98,30 @@ const containerVariants = {
     return (
         <div>
        
-       <section className="events1">
+       <section className="events2">
       {/* <section className='section' style={{ backgroundImage: "linear-gradient(to bottom, rgba(255,255,255,0.7),rgba(255,255,255,0.7)" }}> */}
       <section
-  className="curved-section"
   style={{
-    backgroundImage: "linear-gradient(to right, rgba(10,70,142,0.9), rgba(10,70,142, 0.9))",
-    // Adjust based on the height of the curve
-    paddingBottom: '100px',
+    position: "relative",
+    background: "linear-gradient(to right, rgba(126,88,68,0.9), rgba(126,88,68,0.9))",
+    overflow: "hidden",
+    paddingBottom: "100px", // Ensures content stays above the wave
   }}
 >
-        <Box sx={{py:7}} className='contents'>  
+        <Box  sx={{ paddingTop: "50px" }}>  
                 <div class="section-title" style={{color:'white'}}>
                     <h3>The Art of Luxurious Dentistry</h3>
                     <p>Unparalleled Care for Those Who Expect the Best</p>
                 </div>
              {/* Framer Motion Container for the animation */}
-        <Container component={motion.div} variants={containerVariants} initial="hidden" animate="visible">
+        <Container component={motion.div} variants={containerVariants}  initial="hidden" animate="visible">
          
-        <Grid container spacing={0} sx={{py:3}} textAlign='center'>
+        <Grid container spacing={0} sx={{py:6}}  textAlign='center' alignItems='center' justifyContent='center'>  
+          <Grid item xs={12}  md={8}>
          {/* Show limited cards on mobile, and all cards on desktop */}
-         {Details.slice(0, isMobile ? visibleCards : Details.length).map((item, i) => (
-          <Grid item xs={12} sm={4} md={3} key={i} alignItems='center' justifyContent='center' textAlign='center' sx={{ display: 'flex'}}>
+         <Grid container spacing={0} textAlign='center' alignItems='center' justifyContent='center'>  
+         {Details.map((item, i) => (
+          <Grid item xs={6} sm={4} md={3} key={i}  sx={{ display: 'flex'}} textAlign='center' alignItems='center' justifyContent='center'>
             <motion.div
               variants={fadeUpVariants}
               initial="hidden"
@@ -128,29 +130,18 @@ const containerVariants = {
             >
               <Box 
                 sx={{
-                 
-                  py:4,
-                  display: 'flex',
-                  flexDirection: 'column',
-                  fontFamily: '"Poppins", sans-serif',
-                  width: '100%',
-                  height: '100%',
-                  textAlign:'center'
-                 
+                  py:3,
+                 textAlign:'center'
                   
                 }}
                 onMouseEnter={() => setHoveredCard(i)}
                 onMouseLeave={() => setHoveredCard(null)}
               >
-                <Grid container spacing={0} alignItems='center' justifyContent='center' textAlign='center'>
-                  <Grid item xs={12}  md={12}>
+              
                     <Box
                       sx={{
                         display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        textAlign: 'center',
-                        height: '100%',
+                         textAlign:'center'
                       }}
                     >
                       <Avatar
@@ -161,7 +152,7 @@ const containerVariants = {
                           height: 50,
                           backgroundColor:'transparent',
                           // backgroundImage: 'linear-gradient(to right, #305b9f 0%, #469ce2 100%)',
-                          padding: 0,
+                        
                         }}
                       >
                         <Image
@@ -172,30 +163,65 @@ const containerVariants = {
                       </Avatar>
                     </Box>
                 
-                    <Typography variant='h4' sx={{ fontFamily: "League Spartan, sans-serif", fontWeight: 500, color: 'white', fontSize: '21px' }}>
+                    <Typography variant='h5' sx={{ fontFamily: "League Spartan, sans-serif", fontWeight: 500, color: 'white', fontSize: '20px' }}>
                       {item.title}
                     </Typography>
-                  </Grid>
-                </Grid>
+                
               </Box>
             </motion.div>
           </Grid>
-        ))}
-
+        ))}</Grid>
+        </Grid>
+  <Grid item xs={12}  md={4}>
+  <div style={{ position: "relative", paddingBottom: "56.25%", height: 0, overflow: "hidden" }}>
+  <iframe  src="https://www.youtube.com/embed/Pyd8OcdGpSQ" title="shape32  aligners for everyone, aligner workflow, aligner manufacturing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen 
+  style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          border: 0,
+        }}></iframe>
+      {/* <iframe
+        src="https://www.youtube.com/embed/VIDEO_ID"
+        title="YouTube video"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          border: 0,
+        }}
+      ></iframe> */}
+    </div>
+                  </Grid>
         {/* Show "Explore More" button only if there are hidden cards */}
-        {visibleCards < Details.length && (
-          <Grid item xs={12} textAlign="center">
-            <Hidden smUp>
-            <Button variant="contained" sx={{backgroundColor:'primary.dark',mt:3}} onClick={handleShowMore}>
-              Explore More
-            </Button>
-            </Hidden>
-          </Grid>
-        )}
       </Grid>
                 </Container >
                 </Box>
-         
+          {/* Wave Section */}
+  <div style={{ position: "absolute", bottom: 0, left: 0, width: "100%", height: "150px" }}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 320"
+      preserveAspectRatio="none" /* Ensures scaling fits the container */
+      style={{
+        display: "block",
+        width: "100%",
+        height: "100%", // Height of the wave
+      }}
+    >
+      <path
+        fill="#ffffff"
+        fillOpacity="1"
+        d="M0,224L60,213.3C120,203,240,181,360,186.7C480,192,600,224,720,213.3C840,203,960,149,1080,122.7C1200,96,1320,96,1380,96L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+      ></path>
+    </svg>
+  </div>
             </section></section>
             
         </div >

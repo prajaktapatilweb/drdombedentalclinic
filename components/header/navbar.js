@@ -152,7 +152,7 @@ export default function Navbar(props) {
                     <Toolbar>
                         {!isLargeScreen && (
                             <IconButton edge="start" color="inherit" aria-label="menu" onClick={toggleDrawer(true)}>
-                                <MenuIcon />
+                                <MenuIcon  style={{color:'black'}}/>
                             </IconButton>
                         )}
                         <Box sx={{flexGrow:1,textAlign:{xs:'right',sm:'right',md:'left',lg:'left'}}}>

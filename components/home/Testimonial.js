@@ -82,7 +82,7 @@ const Testimonial = () => {
             id="testimonials"
             sx={{
                 py: { xs: 5, md: 7 },
-                backgroundColor: "#fafafa",
+                backgroundColor: "white",
             }}
         >
             <Container>

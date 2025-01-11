@@ -25,7 +25,7 @@ export default function Home() {
       <Suspense fallback=
         {<div>Component are loading please wait...</div>}>
         <Photogallery />
-        <Awards/>
+        {/* <Awards/> */}
         <Testimonial></Testimonial>
       </Suspense>
       <Equipment />

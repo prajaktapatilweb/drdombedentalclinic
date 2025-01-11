@@ -78,32 +78,56 @@ const fadeUpVariants = {
     whileInView="visible"    // Animate to the visible state when in view
     viewport={{ once: true }} // Optionally only animate once
   >
-    <Box
-      id="gallery"
-      sx={{
-        py: { xs: 7, md: 3},
-        backgroundImage: ` url("/images/Slide06.jpg")`,
-        backgroundRepeat:'repeat',
-        
+     <section className="events2">
+      {/* <section className='section' style={{ backgroundImage: "linear-gradient(to bottom, rgba(255,255,255,0.7),rgba(255,255,255,0.7)" }}> */}
+      <section
+  style={{
+    position: "relative",
+    background: "linear-gradient(to right, rgba(126,88,68,0.9), rgba(126,88,68,0.9))",
+    overflow: "hidden",
+    paddingBottom: "100px", // Ensures content stays above the wave
+  }}
+>
+  {/* Photo Gallery Content */}
+  <Box  sx={{ paddingTop: "50px" }}>
+    <Container maxWidth="lg">
+      <div className="section-title" style={{ color: "white", textAlign: "center", marginBottom: "2rem" }}>
+        <h3>Smile Gallery</h3>
+        <p>Where Happiness Shines Bright</p>
+      </div>
 
+      {/* Slider */}
+      <Slider {...sliderConfig}>
+        {[...Array(13)].map((_, i) => (
+          <PhotoCardItem key={i} item={i + 1} />
+        ))}
+      </Slider>
+    </Container>
+  </Box>
+
+  {/* Wave Section */}
+  <div style={{ position: "absolute", bottom: 0, left: 0, width: "100%", height: "150px" }}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 320"
+      preserveAspectRatio="none" /* Ensures scaling fits the container */
+      style={{
+        display: "block",
+        width: "100%",
+        height: "100%", // Height of the wave
       }}
     >
-      <Container maxWidth="lg">
-        <div class="section-title">
-          <h3>Smile Gallery</h3>
-          <p>Where Happiness Shines Bright</p>
-        </div>
+      <path
+        fill="#ffffff"
+        fillOpacity="1"
+        d="M0,224L60,213.3C120,203,240,181,360,186.7C480,192,600,224,720,213.3C840,203,960,149,1080,122.7C1200,96,1320,96,1380,96L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+      ></path>
+    </svg>
+  </div>
+</section>
 
 
-        <Slider {...sliderConfig}>
-          {/* {data.map((item) => (<PhotoCardItem key={String(item.id)} item={item} />))} */}
-          {[...Array(13)].slice(0).map((e, i) => (
-            <PhotoCardItem key={i} item={i + 1} />
-          ))}
-        </Slider>
-      </Container>
-
-    </Box>
+    </section>
     </motion.div>
   );
 };

@@ -68,7 +68,7 @@ const fadeUpVariants = {
             <Container>
 <hr style={{border: 0, height: '1px', backgroundColor: '#E5E4E2'}} ></hr>
 
-                <Grid container spacing={0} alignItems='center' justifyContent='center' textAlign='center' sx={{py:5}}>
+                <Grid container spacing={0} alignItems='center' justifyContent='center' textAlign='center' sx={{pt:5,pb:7}}>
                 {Details.map((item, i) => ( 
                      <Grid item xs={6} sm={3} md={3} key={i}>   
  <CountUp
@@ -80,7 +80,7 @@ const fadeUpVariants = {
                     className='paras'
                   />{' '}
                   <span className='paras'>+</span>
-                  <Typography variant='h4'  sx={{  color: 'primary.light', cursor: 'pointer',fontFamily: "ABeeZee, sans-serif" }}>
+                  <Typography variant='h4'  sx={{  color: 'primary.light', cursor: 'pointer',fontFamily: "ABeeZee, sans-serif",fontSize:{xs:17,sm:18,md:22} }}>
 
                     {item.title}
                   </Typography>

@@ -19,7 +19,7 @@ const Footer = () => {
     <Box
       component="footer"
       sx={{
-        backgroundColor: "primary.light",
+        backgroundColor: "#3a302e",
         py: 9,
         px:3,
         color: "primary.contrastText",
@@ -37,7 +37,7 @@ const Footer = () => {
             <Grid item xs={12} sm={12} md={4} alignItems='center' justifyContent='center' sx={{p:3}}>
 
               <Box sx={{ mb: { xs: 3, md: 0 } }}>
-                <Image src="/images/logo5.png" width={180} height={100} style={{marginBottom:'7px', filter:'drop-shadow(0px 1px 0px #ffffff)'}} ></Image>
+                <Image src="/images/logodrdombe1.jpg" width={180} height={100} style={{marginBottom:'7px', filter:'drop-shadow(0px 1px 0px #ffffff)'}} ></Image>
 
 
                 <Typography  sx={{ letterSpacing: 1, mb: 2,textAlign:'justify' }}>
@@ -73,8 +73,7 @@ const Footer = () => {
                   <AddLocationIcon sx={{ fontSize: 25, color: 'primary.main' }} />
                 </Grid>
                 <Grid item xs={11} md={11} sx={{ textAlign: 'justify', mb: 2 }}>
-
-                  2-3, Jubiliant Heights, near Nirman House, Vidya Vikas Circle, towards College road, Nashik, Maharashtra 422005
+                101, 102, 103 & 106, Sadguru Sai Paradise, Rahatani-Link Road, Thergaon, Pimpri-Chinchwad, Pune, Maharashtra 411033
                 </Grid>
               </Grid>
               <Grid container alignItems='center' justifyContent='center' textAlign='center'>
@@ -132,7 +131,7 @@ const Footer = () => {
                   <AddLocationIcon sx={{ fontSize: 25, color: 'primary.main' }} />
                 </Grid>
                 <Grid item xs={11} md={11} sx={{ textAlign: 'justify', mb: 2 }}>
-                  2055, Dahi Pool, Nehru Chowk, next to Sandeep Cut Piece Center, Naikwadi Pura, Panchavati, Nashik, Maharashtra 422001
+                101, 102, 103 & 106, Sadguru Sai Paradise, Rahatani-Link Road, Thergaon, Pimpri-Chinchwad, Pune, Maharashtra 411033
 
                 </Grid>
               </Grid>
