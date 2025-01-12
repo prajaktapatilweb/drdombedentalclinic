@@ -14,7 +14,7 @@ const PhotoCardItem = ({ item }) => {
             width={100}
             height={100}
             layout='responsive'
-            style={{borderRadius:5,border:'3px solid #3e66a5',}}
+            style={{borderTopLeftRadius:20,borderBottomRightRadius:20, border:'5px solid #c8b2a7',}}
             ></Image>
        
 

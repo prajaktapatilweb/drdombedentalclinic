@@ -595,12 +595,12 @@ section {
 
 
 /* Parallox Section */ 
+
 .events1 {
-  background-image: url('/images/nashikclinic/clinics8.webp') ;
+  background-image: url('/images/parallox3.jpg') ;
   /* background: url("../public/vision.jpg") center center no-repeat; */
   background-size: cover;
   position: relative;
-  clip-path: ellipse(100% 90% at 50% 10%); /* Curve at the top */
  
 }
 .events1::before {
@@ -628,6 +628,7 @@ section {
 }
 
 /* end parallox section */
+
 
 
 .curved-section {
@@ -678,6 +679,7 @@ section {
 
 
 /* Parallox Section */ 
+
 .events2 {
   background-image: url('/images/nashikclinic/clinics8.webp') ;
   /* background: url("../public/vision.jpg") center center no-repeat; */
