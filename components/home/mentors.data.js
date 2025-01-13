@@ -63,14 +63,14 @@ export const data = [
 
 export const Details = [
     {
-       img:'/images/associate/chetan1.jpg',
+       img:'/images/associate/dr1.png',
             title:"Dr. Chetan Ahire ",
             testpara:"MDS Endodontist - Re Root Canal Specialist",
 post:'Associate Dentist'
        
     },
     {
-        img:'/images/associate/sayali.jpeg',
+        img:'/images/associate/dr2.png',
         title:"Dr. Sayali Gangurde",
         testpara:"General Dentistry",
         post:'Associate Dentist'
@@ -79,7 +79,7 @@ post:'Associate Dentist'
 
     },
     {
-        img:'/images/associate/akshada1.jpg',
+        img:'/images/associate/dr3.png',
         title:"Dr. Akshada Wagh ",
         testpara:"General Dentistry",
         post:'Associate Dentist'
@@ -88,7 +88,7 @@ post:'Associate Dentist'
     },
 
     {
-            img:'/images/associate/prathmesh.jpg',
+            img:'/images/associate/dr4.png',
             title:"Dr. Prathmesh Kapoor",
             testpara:"Oral & Maxillofacial Surgeon",
             post:'Consultant'

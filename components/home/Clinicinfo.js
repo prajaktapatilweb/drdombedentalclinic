@@ -76,20 +76,21 @@ const Clinicinfo = () => {
               
               }}
             >
-             Dr. Dombe's Dental Clinic
+            Welcome to Dr. Dombe's Dental Clinic
 
               </Typography>
             <Typography
               component="h1"
               sx={{
-                fontSize: { xs: 21, md: 28 },
+                fontSize: { xs: 21, md: 22 },
                 fontWeight: "400",
                 fontFamily: "League Spartan, sans-serif",
                 color:'primary.light'
               
               }}
             >
-              Home to the Best Dental Clinic in Nashik
+              Exceptional care and innovative solutions for your dental needs.
+
             </Typography>
             <Typography
             
@@ -100,27 +101,15 @@ const Clinicinfo = () => {
                
               }}
             >
-              Welcome to Abbad Dental Clinic and Implant Center, where you will
-              receive care from the best dentist in Nashik. Our clinic is led by
-              the esteemed Dr. Nikhil Abbad, M.D.S., a highly skilled Consultant
-              Prosthodontist specializing in Crowns, Bridges, and Oral Implants,
-              and Dr. Leena Abbad, B.D.S., an expert in Endodontics and
-              Restorative Dentistry. Together, they offer top-tier, compassionate
-              care through a multidisciplinary approach.
+             Dr. Dombe's Dental Clinic in Thergaon, Pune, is dedicated to providing exceptional dental care with a focus on patient comfort and satisfaction. Founded by Dr. Sagar R. Dombe, a distinguished orthodontist with extensive experience, the clinic offers a wide range of services, including aligners, braces, implants, full mouth rehabilitation (FMR), and digital smile design (DSD). 
+
               <br /><br/>
-              At our dental clinic in Nashik, we provide comprehensive care for
-              all ages, ensuring a comfortable and enjoyable experience. Our
-              services include full mouth rehabilitation, dental implants, root
-              canal treatment, dental veneers, digital smile designing, crowns &
-              bridges, and braces. With our advanced CBCT machine and
-              cutting-edge digital procedures, we deliver precise and effective
-              treatments to enhance your smile and overall dental health.
+              As India’s first in-house aligner manufacturer, the clinic has been utilizing advanced digital technology since 2017 to provide high-quality orthodontic solutions. Under Dr. Dombe's expert guidance, a recognized international speaker on aligner therapy and a key opinion leader for 3Shape, patients receive exceptional care tailored to their specific needs.
+
               <br /><br/>
-              Experience exceptional care at Abbad Dental Clinic and Implant
-              Center. Contact us today to schedule your appointment and take the
-              first step towards a healthier, more beautiful smile. If you're
-              searching for a "dental clinic near me," look no further—your
-              perfect choice is here.
+             <b> In-House Aligner Manufacturing: </b>Offers affordable Aligner treatment options compared to other clinics.
+
+
             </Typography>
           </motion.div>
           

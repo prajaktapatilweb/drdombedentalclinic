@@ -6,6 +6,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme, styled } from "@mui/material/styles";
 import { Details } from "./mentors.data";
 import DownloadCard from "./DownloadCard";
+import { Typography } from "@mui/material";
 
 const StyledDots = styled("ul")(({ theme }) => ({
     "&.slick-dots": {
@@ -47,15 +48,41 @@ const Associates = () => {
         <Box
             id="testimonials"
             sx={{
-                py: { xs: 5, md: 7 },
-                backgroundColor: "#fafafa",
+                py: { xs: 5, md: 5 },
+                backgroundColor: "white",
             }}
         >
             <Container>
-                <div class="section-title">
-                    <h3>Your Smile’s Support Team </h3>
-                    <p>Introducing Our Skilled Associate Dentists and Consultants Dedicated to Your Care</p>
-                </div>
+            <Typography
+              component="h3"
+              sx={{
+                fontSize: { xs: 27, md: 35 },
+                fontWeight: "600",
+                fontFamily: "League Spartan, sans-serif",
+                textAlign:'center'
+              
+              }}
+            >
+                 Our Skilled Associate Dentists
+
+
+              </Typography>
+            <Typography
+              component="h1"
+              sx={{
+                fontSize: { xs: 21, md: 22 },
+                fontWeight: "400",
+                fontFamily: "League Spartan, sans-serif",
+                color:'primary.light',
+                   textAlign:'center',
+                   pb:4
+              
+              }}
+            >
+                      A team of experts committed to providing quality dental care.
+
+
+            </Typography>
                 <Slider {...sliderConfig}>
                     {Details.map((item,i) => (
                         <DownloadCard key={i} item={item} />

@@ -24,7 +24,7 @@ export default function Countdown() {
         },
         {
             icons:<VolunteerActivismIcon/>,
-            title: <span>Orthodontic Consultant</span>,
+            title: <span> 16+ Years of Experience</span>,
             
 
         },

@@ -3,7 +3,6 @@ const Photogallery = lazy(() => import('../components/home/photo-gallery'))
 import { MainLayout } from '../components/layout';
 import Equipment from '../components/home/Equipment';
 import Dentalservices from '../components/home/Dentalservices';
-import DrAkshay from '../components/home/DrAkshay';
 import Contact from '../components/home/Contact';
 import Countdown from "../components/home/Countdown";
 import Clinicinfo from "../components/home/Clinicinfo";
@@ -11,6 +10,7 @@ import Awards from "../components/home/Awards";
 import DownloadCard from "../components/home/DownloadCard";
 import Associates from "../components/home/Associates";
 import Countup from "../components/home/Countup";
+import DrDombe from "../components/home/DrAkshay";
 const Testimonial = lazy(() => import('../components/home/Testimonial'))
 
 export default function Home() {
@@ -21,7 +21,8 @@ export default function Home() {
 
       <Countup></Countup>
       <Dentalservices/>
-       <DrAkshay></DrAkshay> 
+      <DrDombe></DrDombe>
+      
       <Suspense fallback=
         {<div>Component are loading please wait...</div>}>
         <Photogallery />

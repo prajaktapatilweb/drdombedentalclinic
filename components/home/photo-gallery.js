@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Slider from "react-slick";
 import Container from "@mui/material/Container";
 import { useTheme, styled } from "@mui/material/styles";
-import { useMediaQuery } from "@mui/material";
+import { Typography, useMediaQuery } from "@mui/material";
 import PhotoCardItem from "../course/photo-card-item";
 import { motion} from "framer-motion";
 
@@ -110,13 +110,38 @@ const fadeUpVariants = {
   </div>
 
   {/* Photo Gallery Content */}
-  <Box sx={{ paddingTop: "50px" }}>
+  <Box sx={{ paddingTop: "70px" }}>
     <Container maxWidth="lg">
-      <div className="section-title" style={{ color: "white", textAlign: "center", marginBottom: "2rem" }}>
-        <h3>Smile Gallery</h3>
-        <p>Where Happiness Shines Bright</p>
-      </div>
+    <Typography
+              component="h3"
+              sx={{
+                fontSize: { xs: 27, md: 35 },
+                fontWeight: "600",
+                fontFamily: "League Spartan, sans-serif",
+                textAlign:'center'
+              
+              }}
+            >
+              Our Patient Gallery
 
+              </Typography>
+            <Typography
+              component="h1"
+              sx={{
+                fontSize: { xs: 21, md: 22 },
+                fontWeight: "400",
+                fontFamily: "League Spartan, sans-serif",
+                color:'white',
+                   textAlign:'center',
+                   pb:4
+              
+              }}
+            >
+              Celebrating beautiful smiles transformed at Dr. Dombe's Dental Clinic.
+
+
+            </Typography>
+     
       {/* Slider */}
       <Slider {...sliderConfig}>
         {[...Array(13)].map((_, i) => (

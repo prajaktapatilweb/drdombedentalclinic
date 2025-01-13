@@ -109,10 +109,34 @@ const containerVariants = {
   }}
 >
         <Box  sx={{ paddingTop: "50px" }}>  
-                <div class="section-title" style={{color:'white'}}>
-                    <h3>The Art of Luxurious Dentistry</h3>
-                    <p>Unparalleled Care for Those Who Expect the Best</p>
-                </div>
+        <Typography
+              component="h3"
+              sx={{
+                fontSize: { xs: 27, md: 35 },
+                fontWeight: "600",
+                fontFamily: "League Spartan, sans-serif",
+                textAlign:'center'
+              
+              }}
+            >
+              Comprehensive Dental Services
+
+              </Typography>
+            <Typography
+              component="h1"
+              sx={{
+                fontSize: { xs: 21, md: 22 },
+                fontWeight: "400",
+                fontFamily: "League Spartan, sans-serif",
+                color:'white',
+                   textAlign:'center',
+                   pb:4
+              
+              }}
+            >
+              Tailored treatments to enhance your oral health and smile.
+
+            </Typography>
              {/* Framer Motion Container for the animation */}
         <Container component={motion.div} variants={containerVariants}  initial="hidden" animate="visible">
          

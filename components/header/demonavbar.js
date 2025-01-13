@@ -231,7 +231,7 @@ mb:-2,
                             }}>
                                 <motion.h2 variants={textVariants} style={{ fontFamily: "Inter, sans-serif", fontWeight: '800', }} >
 
-                                Brighter Smiles,<br></br> Happier Lives
+                                Transform Your Smile with Expert Care
 
                                 </motion.h2>
                             </Box>
@@ -240,7 +240,8 @@ mb:-2,
                                     variant="p"
                                     sx={{ color: "white", lineHeight: 0, fontSize: 27, lineHeight: 1.2, fontFamily: " sans-serif" }}
                                 >
-                                  Let us help you achieve a radiant smile that<br></br> boosts your confidence every day.
+                                 Trust Dr. Sagar Dombe for bespoke dental treatments in Thergaon, Pune.
+
                                 </Typography>
                             </Hidden>
                             <Box sx={{ "& button": { mt: 3, mb: 7, } }}>

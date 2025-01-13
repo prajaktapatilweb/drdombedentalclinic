@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 
 
 
-const DrAkshay = () => {
+const DrDombe = () => {
 
   // Define the fade-up animation variants
   const fadeUpVariants = {
@@ -40,12 +40,33 @@ const DrAkshay = () => {
 
   return (
     <>
-      <Box id="Doctors" sx={{ py: 8,backgroundColor:'white' }}>
+      <Box id="Doctors" sx={{ py: 8,backgroundColor:'white',textAlign:'center' }}>
         <Container>
-          <div class="section-title">
-            <h3>Your Dental Experts Await</h3>
-            <h2 style={{ fontWeight: 300, fontSize: 20 }}>Your Smile is in the Hands of the Best Dentist in Nashik</h2>
-          </div>
+        <Typography
+              component="h3"
+              sx={{
+                fontSize: { xs: 27, md: 35 },
+                fontWeight: "600",
+                fontFamily: "League Spartan, sans-serif",
+              
+              }}
+            >
+         Meet Dr. Sagar R. Dombe
+
+              </Typography>
+            <Typography
+              component="h1"
+              sx={{
+                fontSize: { xs: 21, md: 22 },
+                fontWeight: "400",
+                fontFamily: "League Spartan, sans-serif",
+                color:'primary.light'
+              
+              }}
+            >
+              A distinguished orthodontist dedicated to transforming smiles.
+
+            </Typography>
         </ Container>
 
         <Grid
@@ -90,31 +111,10 @@ const DrAkshay = () => {
             >
               <Box sx={{ px: 2 }}>
 
-                < Typography
-                  component="h3"
-                  sx={{
-                    fontWeight: 700,
-                    marginBottom: "5px",
-                    fontSize: "30px",
-                    color: "primary.dark",
-                    textAlign: 'left', mt: 3
-                  }}
-                >
+              
+              
 
-                  Dr. Nikhil Abbad
-                </Typography>
-                <span
-                  style={{
-                    fontSize: "17px",
-
-                    fontWeight: '500',
-                  }}
-                >
-                  🏅 M.D.S. Gold Medalist Prosthodontist
-                </span>
-
-
-                <Box className="ps"
+                <Box
                   sx={{
 
                     color: "text.primary",
@@ -127,23 +127,23 @@ const DrAkshay = () => {
                   }}
                 >
                   <Typography>
-                    Dr. Nikhil Abbad is a highly accomplished Consultant Prosthodontist with over 8 years of experience, recognized as one of the best dentists in Nashik. Specializing in Crowns, Bridges, and Oral Implants, he has a distinguished educational background with an M.D.S. in Prosthodontics and Oral Implantology.
+                  Dr. Sagar R. Dombe, M.D.S in Orthodontics, is a highly respected dental practitioner with over 8 years of clinical experience. As a Professor at Dr. D. Y. Patil Medical University since 2009, he combines academic excellence with practical expertise. Dr. Dombe is also the founder of Shape32, an innovative aligner manufacturing lab, and serves as the Founder Secretary of the Indian Aligner Society, contributing significantly to the advancement of orthodontic practices in India.
 
-                    Dr. Nikhil is the founder of Abbad Dental Clinic and Implant Centre in Nashik, where he provides expert care in Implant Surgery and Full Mouth Rehabilitation. His professional journey and achievements include:
-                    <br />
-                    <b>Specialty:</b> Prosthodontics, Crown & Bridge, Oral Implantology<br />
-                    <b>Degrees:</b> M.D.S., Modern Dental College, Indore<br />
-                    <b>Experience: </b>Over 8 years in advanced prosthodontics and implantology<br />
-                    <b>Achievements:</b> Gold Medalist in MDS program; specialized training in Digital Smile Designing (University of Los Angeles)<br />
-                    <b>Research: </b>Published articles in international journals; awarded for best paper presentations in implant dentistry<br />
-                    <b>Prosthetics Training: </b>Oral and maxillofacial prosthetics at TATA Memorial Hospital, Mumbai<br />
-                    <b>Academic Role:</b> Visiting Assistant Professor, SMBT Sangamner<br />
-                    Dr. Nikhil Abbad is passionate about improving patients' confidence through effective dental treatments. He is a dedicated member of the Indian Dental Association, Nashik Chapter, and remains committed to enhancing global healthcare through his expertise. If you’re searching for a “dentist near me”, your search ends here.
-                  </Typography>
+<b>Education:</b> M.D.S in Orthodontics from Dr. D.Y. Patil Medical College, Pune.<br/>
+<b>Experience:</b> Over 8 years in clinical practice; Professor at Dr. D.Y. Patil Medical University since 2009.<br/>
+<b>Innovations:</b> Founder of Shape32, producing 100-150 aligner models daily.<br/>
+<b>Leadership:</b> Key Opinion Leader (KOL) for 3Shape since 2018.<br/>
+<b>Contributions:</b> Founder Secretary of the Indian Aligner Society.<br/>
+<b>Presentations:</b> Notable papers on orthodontic topics presented at prestigious conferences since 2007.<br/>
+<b>Academic Achievements:</b><br/>
+Ranked 1st in All India AMUPMDC exam (2006).<br></br>
+Consistently ranked first in undergraduate examinations (2001-2003).
+
+                   </Typography>
 
                 </Box>
 
-                <input type="checkbox" class="check" />
+                {/* <input type="checkbox" class="check" /> */}
 
               </Box>
             </motion.div>
@@ -161,4 +161,4 @@ const DrAkshay = () => {
     </>
   );
 };
-export default DrAkshay;
+export default DrDombe;

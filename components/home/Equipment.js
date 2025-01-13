@@ -60,17 +60,44 @@ export default function Equipment() {
 
   return (
     <div>
-      <Box
-        sx={{
-          py: { xs: 6, md: 10 },
-          backgroundColor: "#e9e0db",
-        }}
-      >
+      <section
+  style={{
+    position: "relative",
+    background: "linear-gradient(to right, rgb(233, 224, 219), rgb(233, 224, 219))",
+    overflow: "hidden",
+    paddingBottom: "100px", // Ensures content stays above the wave
+  }}
+>
+      <Box sx={{py:7}}>
         <Container>
-          <div className="section-title">
-            <h3>Premier Dental Equipment</h3>
-            <p>Innovative Tools for Optimal Patient Care</p>
-          </div>
+        <Typography
+              component="h3"
+              sx={{
+                fontSize: { xs: 27, md: 35 },
+                fontWeight: "600",
+                fontFamily: "League Spartan, sans-serif",
+                textAlign:'center'
+              
+              }}
+            >
+         Advanced Dental Technology
+
+              </Typography>
+            <Typography
+              component="h1"
+              sx={{
+                fontSize: { xs: 21, md: 22 },
+                fontWeight: "400",
+                fontFamily: "League Spartan, sans-serif",
+                color:'primary.light',
+                   textAlign:'center',
+                   pb:4
+              
+              }}
+            >
+           Ensuring precision and comfort in every treatment.
+
+            </Typography>
 
           {/* Apply motion.div to the container with staggered animation */}
           <Grid
@@ -131,7 +158,26 @@ export default function Equipment() {
             ))}
           </Grid>
         </Container>
+        <div style={{ position: "absolute", bottom: 0, left: 0, width: "100%", height: "150px" }}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 320"
+      preserveAspectRatio="none" /* Ensures scaling fits the container */
+      style={{
+        display: "block",
+        width: "100%",
+        height: "100%", // Height of the wave
+      }}
+    >
+      <path
+        fill="#ffffff"
+        fillOpacity="1"
+        d="M0,224L60,213.3C120,203,240,181,360,186.7C480,192,600,224,720,213.3C840,203,960,149,1080,122.7C1200,96,1320,96,1380,96L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+      ></path>
+    </svg>
+  </div>
       </Box>
+      </section>
     </div>
   );
 }

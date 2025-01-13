@@ -9,6 +9,7 @@ import IconArrowBack from "@mui/icons-material/ArrowBack";
 import IconArrowForward from "@mui/icons-material/ArrowForward";
 import { MentorCardItem } from "../mentor";
 import { data } from "./mentors.data";
+import { Typography } from "@mui/material";
 const SliderArrow = (props) => {
     const { onClick, type, className } = props;
     return (
@@ -86,10 +87,34 @@ const Testimonial = () => {
             }}
         >
             <Container>
-                <div class="section-title">
-                    <h3>What Our Patients Say</h3>
-                    <p>Hear from Those Who Trust Us with Their Smiles</p>
-                </div>
+            <Typography
+              component="h3"
+              sx={{
+                fontSize: { xs: 27, md: 35 },
+                fontWeight: "600",
+                fontFamily: "League Spartan, sans-serif",
+                textAlign:'center'
+              
+              }}
+            >
+           What Our Patients Say
+              </Typography>
+            <Typography
+              component="h1"
+              sx={{
+                fontSize: { xs: 21, md: 22 },
+                fontWeight: "400",
+                fontFamily: "League Spartan, sans-serif",
+                color:'primary.light',
+                   textAlign:'center',
+                   pb:4
+              
+              }}
+            >
+             Hear from our satisfied patients about their experiences with us.
+
+            </Typography>
+               
                 <Slider {...sliderConfig}>
                     {data.map((item) => (
                         <MentorCardItem key={String(item.id)} item={item} />

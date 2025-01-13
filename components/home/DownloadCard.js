@@ -7,16 +7,16 @@ import { Card, Typography } from '@mui/material';
 const DownloadCard = ({ item }) => {
   return (
     <Box>
-      <Card
+      <Box
         sx={{
           zIndex: 1,
           m: 1,
           display: 'flex',
           flexDirection: 'column',
           position: 'relative',
-          backgroundColor: '#c8b2a7',
-          borderRadius: 2,
-          border: '1px #EDEDEE solid',
+          backgroundColor: 'transparent',
+          // borderRadius: 2,
+          // border: '1px #EDEDEE solid',
         }}
       >
         <Box
@@ -24,7 +24,7 @@ const DownloadCard = ({ item }) => {
             width: '100%',
             height: '250px', // Fixed height for the image container
             position: 'relative',
-            backgroundColor: 'white',
+            backgroundColor: 'transparent',
             borderTopLeftRadius: 2,
             borderTopRightRadius: 2,
             overflow: 'hidden', // Ensure the image doesn't overflow the container
@@ -33,7 +33,7 @@ const DownloadCard = ({ item }) => {
           <Image
             src={item.img}
             layout="fill" // Use "fill" to make the image cover the entire container
-            objectFit="cover" // Ensures the image covers the full container without stretching
+            objectFit="contain" // Ensures the image covers the full container without stretching
             alt="Associates"
           />
         </Box>
@@ -43,7 +43,7 @@ const DownloadCard = ({ item }) => {
             px: 1,
             color: 'primary.contrastText',
             flex: 1,
-            backgroundColor: '#c8b2a7',
+            backgroundColor: 'transparent',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
@@ -69,7 +69,7 @@ const DownloadCard = ({ item }) => {
             ({item.post})
           </Box>
         </Box>
-      </Card>
+      </Box>
     </Box>
   );
 };
