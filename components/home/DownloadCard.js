@@ -1,7 +1,7 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import Image from "next/legacy/image";
-import { Card, Typography } from '@mui/material';
+import {Typography } from '@mui/material';
 
 
 const DownloadCard = ({ item }) => {

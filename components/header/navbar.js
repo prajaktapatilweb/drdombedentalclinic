@@ -37,7 +37,7 @@ const navItems = [
     { linkID: "/#treatments", label: "Treatments" },
     { linkID: "/#Doctors", label: "Doctors" },
     { linkID: "/#gallery", label: "Gallery" },
-    { linkID: "/#awards", label: "Awards" },
+    // { linkID: "/#awards", label: "Awards" },
     { linkID: "/#testimonials", label: "Testimonials" },
     { linkID: "/#contactform", label: "Contact" },
 ];

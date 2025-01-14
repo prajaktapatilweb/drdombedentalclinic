@@ -98,7 +98,7 @@ const containerVariants = {
     return (
         <div>
        
-       <section className="events2">
+       <section id='treatments' className="events2" >
       {/* <section className='section' style={{ backgroundImage: "linear-gradient(to bottom, rgba(255,255,255,0.7),rgba(255,255,255,0.7)" }}> */}
       <section
   style={{

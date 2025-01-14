@@ -78,7 +78,7 @@ const fadeUpVariants = {
     whileInView="visible"    // Animate to the visible state when in view
     viewport={{ once: true }} // Optionally only animate once
   >
-    <section className="events1">
+    <section id="gallery" className="events1">
      <section
   style={{
     position: "relative",
