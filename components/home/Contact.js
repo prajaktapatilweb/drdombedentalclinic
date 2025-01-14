@@ -38,7 +38,7 @@ const validationSchema = yup.object({
 });
 
 const Contact = () => {
-  const contactno1 = "+917373736215";
+  const contactno1 = "9890840340";
   const router = useRouter();
 
   const onSubmit = async (values, submitProps) => {
@@ -95,32 +95,65 @@ const Contact = () => {
   </div>
       
   <Container>
+  <Typography
+              component="h3"
+              sx={{
+                fontSize: { xs: 27, md: 35 },
+                fontWeight: "600",
+                fontFamily: "League Spartan, sans-serif",
+                textAlign:'center'
+              
+              }}
+            >
+       Get in Touch with Us
+
+              </Typography>
+            <Typography
+              component="h1"
+              sx={{
+                fontSize: { xs: 21, md: 22 },
+                fontWeight: "400",
+                fontFamily: "League Spartan, sans-serif",
+                color:'primary.light',
+                   textAlign:'center',
+                   pb:4
+              
+              }}
+            >
+          Have questions? We're here to help—fill out the form below!
+
+            </Typography>
           <Grid container spacing={2} alignItems='center' justifyContent='center'>
             <Grid item xs={12} md={6}>
               <Grid container spacing={2}>
                 <Grid item xs={12} md={12}>
-                  <div class="info-box" style={{ background: '#ffffff',boxShadow: 'rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset'}}>
-                    <i class="bx"><LocationOnIcon sx={{ color: 'primary.main' }}/></i>
+                <div class="info-box mt-4">  
+                  <LocationOnIcon className='bx'/>
                     <h3 style={{fontSize:'18px'}}>Our Location</h3>
-                    <p> HSR Dental Booth, 255, Royal Heights, 17th Cross Road, Sector 6,<br/> HSR Layout, Bengaluru, Karnataka 560 102.</p>
+                    <p>101, 102, 103 & 106, Sadguru Sai Paradise, Rahatani-Link Road,<br></br> Thergaon, Pimpri-Chinchwad, Pune, Maharashtra 411033
+                    </p>
                   </div>
                 </Grid>
                 <Grid item xs={12} md={6}>
-                  <div class="info-box mt-4" style={{ background: '#ffffff',boxShadow: 'rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset'  }}>
-                    <i class="bx"><EmailTwoToneIcon sx={{ color: 'primary.main' }}></EmailTwoToneIcon></i>
+                  <div class="info-box mt-4">
+                    <EmailTwoToneIcon className='bx'></EmailTwoToneIcon>
                     <h3>Working Hours</h3>
-                    <p>Monday to Sunday:<br/>11 am–8 pm</p>
+                    <p> Monday to Saturday: 10 am - 8 pm<br/>
+                    Sunday - Closed
+                    </p>
+                    
+
+
                   </div>
                 </Grid>
                 <Grid item xs={12} md={6}>
-                  <div class="info-box mt-4" style={{ background: '#ffffff',boxShadow: 'rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset'  }}>
-                    <i class="bx">
-                      <CallTwoToneIcon sx={{ color: 'primary.main' }} />
-                    </i>
+                <div class="info-box mt-4"> 
+                      <CallTwoToneIcon   className='bx' />
+                  
                     <h3>Contact Us</h3>
-                    <Link href={`tel:${contactno1}`} target="_blank">+917373736215</Link>
+                    <Link href={`tel:${contactno1}`} target="_blank" sx={{color:'primary.dark'}}>+919890840340</Link>
                     <br/>
-                    <Link href={`mailto:${'hsrdentalbooth@gmail.com'}`} target="_blank">hsrdentalbooth@gmail.com</Link>
+                    <Link href={`mailto:${'shape32aligners@gmail.com'}`} target="_blank" sx={{color:'primary.dark'}}>shape32aligners@gmail.com</Link>
                   </div>
                 </Grid>
               </Grid>
@@ -235,6 +268,7 @@ const Contact = () => {
                             textTransform: 'capitalize',
                             fontSize: 16,
                             minWidth: 160,
+                            backgroundColor:'primary.dark'
                           }}
                           type='submit'
                         >

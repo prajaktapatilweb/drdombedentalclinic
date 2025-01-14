@@ -24,13 +24,13 @@ export default function MyApp(props) {
                 <meta name="viewport" content="initial-scale=1, width=device-width" />
                
                                 <title>
-                                Best Dentist in Nashik - Abbad Dental Clinic & Implant Centre
+                                Dental Clinic in Thergaon, Pune - Dr. Dombe's Dental Clinic
 
                                 </title>
-                                <meta name="title" content="Dentist in Nashik | Dental Clinic in Nashik - Abbad Dental Clinic"></meta>
-                                <meta name='description' content="Visit Abbad Dental Clinic in Nashik, led by Dr. Nikhil Abbad, a 🏅Gold Medalist Prosthodontist specializing in Prosthodontics, Crowns & Bridges, & Implantology."></meta>
+                                <meta name="title" content="Dental Clinic in Thergaon, Pune - Dr. Dombe's Dental Clinic"></meta>
+                                {/* <meta name='description' content="Visit Abbad Dental Clinic in Nashik, led by Dr. Nikhil Abbad, a 🏅Gold Medalist Prosthodontist specializing in Prosthodontics, Crowns & Bridges, & Implantology."></meta>
                                 <meta name="google-site-verification" content="TGw02AJsXeaWAtmFxgztAkDkZmYy1ha3GcSdnXCZ8Nk" />
-                                <link rel="canonical" href="https://www.abbaddentalclinic.com/"/>
+                                <link rel="canonical" href="https://www.abbaddentalclinic.com/"/> */}
 
 
                                 {/* OG Tags -  */}
