@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import Avatar from '@mui/material/Avatar';
-import { Box, Button, Card, Container, Grid, Hidden, Typography } from '@mui/material';
+import { Box, Container, Grid,Typography } from '@mui/material';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { useTheme, useMediaQuery } from '@mui/material';
+import Heading from './Heading';
+import { headList2 } from '../constants/titlefile';
 
 export default function Dentalservices() {
     var Details = [
@@ -86,14 +87,7 @@ const containerVariants = {
       },
     },
   };
-  const { breakpoints } = useTheme();
-  const isMobile = useMediaQuery(breakpoints.down("sm"));// For screens smaller than 'sm'
-  const [visibleCards, setVisibleCards] = useState(4); // Initially show 4 cards on mobile screens
 
-  // Function to show more cards
-  const handleShowMore = () => {
-    setVisibleCards(Details.length); // Show all the cards when the button is clicked
-  };
 
     return (
         <div>
@@ -109,34 +103,7 @@ const containerVariants = {
   }}
 >
         <Box  sx={{ paddingTop: "50px" }}>  
-        <Typography
-              component="h3"
-              sx={{
-                fontSize: { xs: 27, md: 35 },
-                fontWeight: "600",
-                fontFamily: "League Spartan, sans-serif",
-                textAlign:'center'
-              
-              }}
-            >
-              Comprehensive Dental Services
-
-              </Typography>
-            <Typography
-              component="h1"
-              sx={{
-                fontSize: { xs: 21, md: 22 },
-                fontWeight: "400",
-                fontFamily: "League Spartan, sans-serif",
-                color:'white',
-                   textAlign:'center',
-                   pb:4
-              
-              }}
-            >
-              Tailored treatments to enhance your oral health and smile.
-
-            </Typography>
+<Heading data={headList2}/>
              {/* Framer Motion Container for the animation */}
         <Container component={motion.div} variants={containerVariants}  initial="hidden" animate="visible">
          
@@ -145,56 +112,74 @@ const containerVariants = {
          {/* Show limited cards on mobile, and all cards on desktop */}
          <Grid container spacing={0} textAlign='center' alignItems='center' justifyContent='center'>  
          {Details.map((item, i) => (
-          <Grid item xs={6} sm={4} md={3} key={i}  sx={{ display: 'flex'}} textAlign='center' alignItems='center' justifyContent='center'>
-            <motion.div
-              variants={fadeUpVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-            >
-              <Box 
-                sx={{
-                  py:3,
-                 textAlign:'center'
-                  
-                }}
-                onMouseEnter={() => setHoveredCard(i)}
-                onMouseLeave={() => setHoveredCard(null)}
-              >
-              
-                    <Box
-                      sx={{
-                        display: 'flex',
-                         textAlign:'center'
-                      }}
-                    >
-                      <Avatar
-                        alt="R"
-                        src=''
-                        sx={{
-                          width: 50,
-                          height: 50,
-                          backgroundColor:'transparent',
-                          // backgroundImage: 'linear-gradient(to right, #305b9f 0%, #469ce2 100%)',
-                        
-                        }}
-                      >
-                        <Image
-                          src={hoveredCard === i ? item.icons1 : item.icons}
-                          width={45}
-                          height={45}
-                        />
-                      </Avatar>
-                    </Box>
-                
-                    <Typography variant='h5' sx={{ fontFamily: "League Spartan, sans-serif", fontWeight: 500, color: 'white', fontSize: '20px' }}>
-                      {item.title}
-                    </Typography>
-                
-              </Box>
-            </motion.div>
-          </Grid>
-        ))}</Grid>
+  <Grid
+    item
+    xs={6}
+    sm={4}
+    md={3}
+    key={i}
+    sx={{
+      display: 'flex', // Enable flexbox for centering
+      flexDirection: 'column', // Arrange content vertically
+      justifyContent: 'center', // Center content vertically
+      alignItems: 'center', // Center content horizontally
+      textAlign: 'center', // Center text inside the Grid
+      height: '100%', // Ensure the Grid takes full height
+    }}
+  >
+    <motion.div
+      variants={fadeUpVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      style={{
+        display: 'flex', // Flexbox for child items
+        flexDirection: 'column', // Arrange avatar and text vertically
+        justifyContent: 'center', // Vertical centering
+        alignItems: 'center', // Horizontal centering
+      }}
+    >
+      {/* Avatar */}
+      <Avatar
+        alt="R"
+        src=""
+        sx={{
+          width: 70, // Avatar width
+          height: 70, // Avatar height
+          backgroundColor: 'transparent', // Optional background color
+          display: 'flex', // Flexbox for inner content
+          justifyContent: 'center', // Center content horizontally
+          alignItems: 'center', // Center content vertically
+          marginBottom: '10px', // Space below the avatar
+        }}
+      >
+        <Image
+          src={item.icons}
+          width={50}
+          height={50}
+          style={{
+            display: 'block', // Ensure the image aligns properly
+          }}
+        />
+      </Avatar>
+
+      {/* Title */}
+      <Typography
+        variant="h5"
+        sx={{
+          fontWeight: 500,
+          color: 'white',
+          fontSize: '20px',
+          textAlign: 'center',
+        }}
+      >
+        {item.title}
+      </Typography>
+    </motion.div>
+  </Grid>
+))}
+
+</Grid>
         </Grid>
   <Grid item xs={12}  md={4}>
   <div style={{ position: "relative", paddingBottom: "56.25%", height: 0, overflow: "hidden" }}>

@@ -5,6 +5,8 @@ import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import { motion } from 'framer-motion';
+import Heading from "./Heading";
+import { headList3, headList9 } from "../constants/titlefile";
 
 
 
@@ -40,33 +42,9 @@ const DrDombe = () => {
 
   return (
     <>
-      <Box id="Doctors" sx={{ py: 8,backgroundColor:'white',textAlign:'center' }}>
+      <Box id="Doctors" sx={{ py: 8,textAlign:'center' }}>
         <Container>
-        <Typography
-              component="h3"
-              sx={{
-                fontSize: { xs: 27, md: 35 },
-                fontWeight: "600",
-                fontFamily: "League Spartan, sans-serif",
-              
-              }}
-            >
-         Meet Dr. Sagar R. Dombe
-
-              </Typography>
-            <Typography
-              component="h1"
-              sx={{
-                fontSize: { xs: 21, md: 22 },
-                fontWeight: "400",
-                fontFamily: "League Spartan, sans-serif",
-                color:'primary.light'
-              
-              }}
-            >
-              A distinguished orthodontist dedicated to transforming smiles.
-
-            </Typography>
+   <Heading  data={headList3}/>
         </ Container>
 
         <Grid
@@ -74,7 +52,6 @@ const DrDombe = () => {
           spacing={0}
           alignItems="center"
           justifyContent="center"
-          sx={{ fontFamily: '"Poppins", sans-serif' }}
         >
 
 
@@ -127,7 +104,7 @@ const DrDombe = () => {
                   }}
                 >
                   <Typography>
-                  Dr. Sagar R. Dombe, M.D.S in Orthodontics, is a highly respected dental practitioner with over 8 years of clinical experience. As a Professor at Dr. D. Y. Patil Medical University since 2009, he combines academic excellence with practical expertise. Dr. Dombe is also the founder of Shape32, an innovative aligner manufacturing lab, and serves as the Founder Secretary of the Indian Aligner Society, contributing significantly to the advancement of orthodontic practices in India.
+                  Dr. Sagar R. Dombe, M.D.S in Orthodontics, is a highly respected dental practitioner with over 8 years of clinical experience. As a Professor at Dr. D. Y. Patil Medical University since 2009, he combines academic excellence with practical expertise. Dr. Dombe is also the founder of Shape32, an innovative aligner manufacturing lab, and serves as the Founder Secretary of the Indian Aligner Society, contributing significantly to the advancement of orthodontic practices in India.<br></br>
 
 <b>Education:</b> M.D.S in Orthodontics from Dr. D.Y. Patil Medical College, Pune.<br/>
 <b>Experience:</b> Over 8 years in clinical practice; Professor at Dr. D.Y. Patil Medical University since 2009.<br/>

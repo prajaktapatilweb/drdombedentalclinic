@@ -7,6 +7,8 @@ import { useTheme, styled } from "@mui/material/styles";
 import { Details } from "./mentors.data";
 import DownloadCard from "./DownloadCard";
 import { Typography } from "@mui/material";
+import Heading from "./Heading";
+import { headList7 } from "../constants/titlefile";
 
 const StyledDots = styled("ul")(({ theme }) => ({
     "&.slick-dots": {
@@ -49,40 +51,11 @@ const Associates = () => {
             id="testimonials"
             sx={{
                 py: { xs: 5, md: 5 },
-                backgroundColor: "white",
             }}
         >
             <Container>
-            <Typography
-              component="h3"
-              sx={{
-                fontSize: { xs: 27, md: 35 },
-                fontWeight: "600",
-                fontFamily: "League Spartan, sans-serif",
-                textAlign:'center'
-              
-              }}
-            >
-                 Our Skilled Associate Dentists
-
-
-              </Typography>
-            <Typography
-              component="h1"
-              sx={{
-                fontSize: { xs: 21, md: 22 },
-                fontWeight: "400",
-                fontFamily: "League Spartan, sans-serif",
-                color:'primary.light',
-                   textAlign:'center',
-                   pb:4
-              
-              }}
-            >
-                      A team of experts committed to providing quality dental care.
-
-
-            </Typography>
+            <Heading data={headList7}/>
+            <br/>
                 <Slider {...sliderConfig}>
                     {Details.map((item,i) => (
                         <DownloadCard key={i} item={item} />

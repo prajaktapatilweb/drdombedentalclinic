@@ -14,7 +14,6 @@ import { Link as ScrollLink } from "react-scroll";
 import { StyledButton } from "../styled-button";
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import Navbar from "./navbar";
-import { fontFamily } from "../../config/theme/typography";
 
 function ResponsiveAppBar() {
 
@@ -211,7 +210,7 @@ function ResponsiveAppBar() {
                     justifyContent="center"
                     textAlign="left"
                 >
-                    <Grid item xs={12} md={7} sx={{ p: 3, mt: { xs: -7, sm: -7, md: -7 } }}>
+                    <Grid item xs={12} md={8} sx={{ px: {xs:2,sm:3,md:7},py:3, mt: { xs: -7, sm: -7, md: -7 } }}>
                         <motion.div className="textcontainer" variants={textVariants}
                             initial="initial"
                             animate="animate"
@@ -223,7 +222,6 @@ function ResponsiveAppBar() {
 
                                 color: { xs: 'white', sm: 'white', md: "white" },
                                 lineHeight: 1.2,
-                                fontFamily:'sans serif',
 mb:-2,
                                 // '-webkit-text-stroke': '1px #28282B',
 
@@ -238,7 +236,7 @@ mb:-2,
                             <Hidden smDown>
                                 <Typography
                                     variant="p"
-                                    sx={{ color: "white", lineHeight: 0, fontSize: 27, lineHeight: 1.2, fontFamily: " sans-serif" }}
+                                    sx={{ color: "white", lineHeight: 0, fontSize: 23, lineHeight: 1.2, }}
                                 >
                                  Trust Dr. Sagar Dombe for bespoke dental treatments in Thergaon, Pune.
 
@@ -263,7 +261,7 @@ mb:-2,
                                             borderRadius: 10,
                                             backgroundColor: 'white',
                                             fontWeight:600,
-                                           fontFamily: "ABeeZee, sans-serif",
+                                         
 
                                             color: "#795442",
                                         }}
@@ -274,7 +272,7 @@ mb:-2,
                             </Box>
                         </motion.div>
                     </Grid>
-                    <Grid item xs={12} md={5}>
+                    <Grid item xs={12} md={4}>
                     </Grid>
                 </Grid>
                 {/* </Container> */}

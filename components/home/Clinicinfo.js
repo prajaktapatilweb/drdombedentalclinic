@@ -1,9 +1,10 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
-import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import { motion } from "framer-motion";
 import Drgallery from "./Drgallery";
+import Heading from "./Heading";
+import { headList1 } from "../constants/titlefile";
 
 
  // Define the fade-up animation variants
@@ -41,7 +42,7 @@ const Clinicinfo = () => {
     alignItems="center"
     justifyContent="center"
     id="aboutus"
-    sx={{ fontFamily: '"Poppins", sans-serif',py:8 }}
+    sx={{py:8 }}
   >
 
 
@@ -67,31 +68,33 @@ const Clinicinfo = () => {
   whileInView="visible"    // Animate to the visible state when in view
   viewport={{ once: true }} // Optionally only animate once
 >
+
 <Typography
-              component="h3"
-              sx={{
-                fontSize: { xs: 27, md: 35 },
-                fontWeight: "600",
-                fontFamily: "League Spartan, sans-serif",
-              
-              }}
-            >
-            Welcome to Dr. Dombe's Dental Clinic
+    variant="h1"
+    sx={{
+        // fontSize: { xs: 27, md: 33 },
+        fontWeight: "600",
+      
 
-              </Typography>
-            <Typography
-              component="h1"
-              sx={{
-                fontSize: { xs: 21, md: 22 },
-                fontWeight: "400",
-                fontFamily: "League Spartan, sans-serif",
-                color:'primary.light'
-              
-              }}
-            >
-              Exceptional care and innovative solutions for your dental needs.
+    }}
+>
+Welcome to Dr. Dombe's Dental Clinic
 
-            </Typography>
+</Typography>
+<Typography
+    component="h1"
+    sx={{
+        fontSize: { sm: 18, md: 20 },
+        fontWeight: "400",
+        color: 'primary.light',
+        pb:1
+
+    }}
+>
+Exceptional care and innovative solutions for your dental needs.
+
+</Typography>
+
             <Typography
             
               style={{

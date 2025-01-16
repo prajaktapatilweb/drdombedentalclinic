@@ -1,67 +1,51 @@
 const headDetails = {
-    counts: {
+  
 
-        subtitle: "Counting Our Achievements",
-        title: "Celebrating Successes",
-
-    },
-    about: {
-
-        subtitle: "About Family Dental Care",
-        title: "   Dr. Dombe's Dental Clinic",
-
-    },
     service: {
 
-        subtitle: 'Our Comprehensive Dental Services',
-        title: <span style={{ color: 'white' }}>We provide a wide range of dental services to cater to all your oral health needs.</span>
+        title: <span style={{ color: 'white' }}>Comprehensive Dental Services</span>,
+        subtitle: <span style={{ color: 'white' }}>Tailored treatments to enhance your oral health and smile.</span>
 
     },
-    location: {
-        subtitle: 'Our Locations',
-        title: <span style={{ color: 'white' }}>Introducing Dr. Akshay's DentAvenue Dental Clinic, Chembur</span>
+    drinfo: {
+        title: 'Meet Dr. Sagar R. Dombe',
+        subtitle:'A distinguished orthodontist dedicated to transforming smiles'
+
 
     },
-    equip: {
-
-        subtitle: "Equipment",
-        title: "Smile with Confidence at Famile Dental Care",
-
-    },
-    wyuus: {
-        subtitle: 'Why Choose Us',
-        title: 'And Let\'s Not Forget'
-
-    },
-
     photos: {
-        subtitle: 'Capturing Dental Care',
-        title: 'Every Smile Matters'
+        title: <span style={{ color: 'white' }}>Our Patient Gallery</span>,
+        subtitle: <span style={{ color: 'white' }}>Celebrating beautiful smiles transformed at Dr. Dombe\'s Dental Clinic.</span>
 
     },
     testi: {
-        subtitle: 'What Our Patients Say',
-        title: 'Read what our satisfied patients have to say about their experiences with us'
+        title: ' What Our Patients Say',
+        subtitle: ' Hear from our satisfied patients about their experiences with us.'
     },
-    faqs: {
-        subtitle: ' Frequently Asked Questions',
-        title: 'Here are some common questions our patients ask.'
+    equip: {
+
+        title: "Advanced Dental Technology",
+        subtitle: "Ensuring precision and comfort in every treatment.",
+
+    },
+   
+    associate: {
+        title: 'Our Skilled Associate Dentists',
+        subtitle: 'A team of experts committed to providing quality dental care.'
 
     },
     connect: {
-        subtitle: 'Connect with Our Expert Dentists in Dharavi',
-        title: ''
+        title: ' Get in Touch with Us',
+        subtitle: ' Have questions? We\'re here to help—fill out the form below!'
     }
 };
 
 
-export const headList1 = [headDetails.about];
+
 export const headList2 = [headDetails.service];
-export const headList3 = [headDetails.equip];
-export const headList4 = [headDetails.wyuus];
-export const headList5 = [headDetails.photos];
-export const headList6 = [headDetails.testi];
-export const headList7 = [headDetails.counts];
-export const headList8 = [headDetails.faqs];
-export const headList9 = [headDetails.location];
-export const headList10 = [headDetails.connect];
+export const headList3 = [headDetails.drinfo];
+export const headList4 = [headDetails.photos];
+export const headList5 = [headDetails.testi];
+export const headList6 = [headDetails.equip];
+export const headList7 = [headDetails.associate];
+export const headList8 = [headDetails.connect];

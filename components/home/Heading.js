@@ -6,15 +6,35 @@ export default function Heading({ data }) {
         <div>
             <Box>
                 {data.map((item) => (
-                    <Box sx={{textAlign:'center',mb:3}}>
-                       
-                        <Typography variant="h2" sx={{color:'primary.dark'}}>
+                    <Box sx={{textAlign:'center'}}>
+
+                        <Typography
+                            component="h3"
+                            sx={{
+                                fontSize: { xs: 27, md: 35 },
+                                fontWeight: "600",
+                              
+
+                            }}
+                        >
                             {item.title}
+
                         </Typography>
-                        <Typography variant='p' sx={{color:'primary.light'}}>
+                        <Typography
+                            component="h1"
+                            sx={{
+                                fontSize: { xs: 21, md: 22 },
+                                fontWeight: "400",
+                                color: 'primary.light',
+                                pb:1
+
+                            }}
+                        >
                             {item.subtitle}
+
                         </Typography>
                     </Box>
+
                 ))}
             </Box>
         </div>

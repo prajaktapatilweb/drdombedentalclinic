@@ -80,7 +80,7 @@ const fadeUpVariants = {
                                 </Grid>
 
                                 <Grid item xs={9} md={9}>
-                                        <Typography variant='h4' sx={{textAlign:'justify', color: 'primary.dark', cursor: 'pointer',fontFamily: "ABeeZee, sans-serif",fontSize:{xs:17,sm:18,md:22} }}>
+                                        <Typography variant='h4' sx={{textAlign:'center', color: 'primary.dark', cursor: 'pointer',fontSize:{xs:17,sm:18,md:22} }}>
                                             {item.title}
                                         </Typography>
                                         <Typography sx={{textAlign:'justify',}}>Vehicula quam potenti in si pretium donec ultricies</Typography>

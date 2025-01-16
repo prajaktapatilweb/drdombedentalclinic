@@ -12,6 +12,8 @@ import { useRouter } from 'next/router';
 import CallTwoToneIcon from "@mui/icons-material/CallTwoTone";
 import EmailTwoToneIcon from "@mui/icons-material/EmailTwoTone";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import Heading from './Heading';
+import { headList8 } from '../constants/titlefile';
 
 
 const All = [
@@ -95,34 +97,8 @@ const Contact = () => {
   </div>
       
   <Container>
-  <Typography
-              component="h3"
-              sx={{
-                fontSize: { xs: 27, md: 35 },
-                fontWeight: "600",
-                fontFamily: "League Spartan, sans-serif",
-                textAlign:'center'
-              
-              }}
-            >
-       Get in Touch with Us
-
-              </Typography>
-            <Typography
-              component="h1"
-              sx={{
-                fontSize: { xs: 21, md: 22 },
-                fontWeight: "400",
-                fontFamily: "League Spartan, sans-serif",
-                color:'primary.light',
-                   textAlign:'center',
-                   pb:4
-              
-              }}
-            >
-          Have questions? We're here to help—fill out the form below!
-
-            </Typography>
+<Heading data={headList8}/>
+<br/>
           <Grid container spacing={2} alignItems='center' justifyContent='center'>
             <Grid item xs={12} md={6}>
               <Grid container spacing={2}>

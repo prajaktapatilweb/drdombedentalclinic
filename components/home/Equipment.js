@@ -7,6 +7,8 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
+import Heading from "./Heading";
+import { headList3, headList6 } from "../constants/titlefile";
 
 // Define animation variants for each box (fade-up motion)
 const fadeUpVariants = {
@@ -55,9 +57,6 @@ export default function Equipment() {
     },
   ];
 
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("xs")); // Check if screen is mobile (small screen)
-
   return (
     <div>
       <section
@@ -70,34 +69,8 @@ export default function Equipment() {
 >
       <Box sx={{py:7}}>
         <Container>
-        <Typography
-              component="h3"
-              sx={{
-                fontSize: { xs: 27, md: 35 },
-                fontWeight: "600",
-                fontFamily: "League Spartan, sans-serif",
-                textAlign:'center'
-              
-              }}
-            >
-         Advanced Dental Technology
-
-              </Typography>
-            <Typography
-              component="h1"
-              sx={{
-                fontSize: { xs: 21, md: 22 },
-                fontWeight: "400",
-                fontFamily: "League Spartan, sans-serif",
-                color:'primary.light',
-                   textAlign:'center',
-                   pb:4
-              
-              }}
-            >
-           Ensuring precision and comfort in every treatment.
-
-            </Typography>
+        <Heading  data={headList6}/>
+        <br/>
 
           {/* Apply motion.div to the container with staggered animation */}
           <Grid
@@ -108,6 +81,7 @@ export default function Equipment() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }} // Ensure the animation triggers once
+           
           >
             {Details.map((item, i) => (
               <Grid item xs={12} sm={6} md={3} key={i}>

@@ -80,7 +80,7 @@ const fadeUpVariants = {
                     className='paras'
                   />{' '}
                   <span className='paras'>+</span>
-                  <Typography variant='h4'  sx={{  color: 'primary.light', cursor: 'pointer',fontFamily: "ABeeZee, sans-serif",fontSize:{xs:17,sm:18,md:22} }}>
+                  <Typography variant='h4'  sx={{  color: 'primary.light', cursor: 'pointer',fontSize:{xs:17,sm:18,md:22} }}>
 
                     {item.title}
                   </Typography>

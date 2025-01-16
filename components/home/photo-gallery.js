@@ -6,6 +6,8 @@ import { useTheme, styled } from "@mui/material/styles";
 import { Typography, useMediaQuery } from "@mui/material";
 import PhotoCardItem from "../course/photo-card-item";
 import { motion} from "framer-motion";
+import Heading from "./Heading";
+import { headList4, headList5 } from "../constants/titlefile";
 
 
 const StyledDots = styled("ul")(({ theme }) => ({
@@ -112,35 +114,7 @@ const fadeUpVariants = {
   {/* Photo Gallery Content */}
   <Box sx={{ paddingTop: "70px" }}>
     <Container maxWidth="lg">
-    <Typography
-              component="h3"
-              sx={{
-                fontSize: { xs: 27, md: 35 },
-                fontWeight: "600",
-                fontFamily: "League Spartan, sans-serif",
-                textAlign:'center'
-              
-              }}
-            >
-              Our Patient Gallery
-
-              </Typography>
-            <Typography
-              component="h1"
-              sx={{
-                fontSize: { xs: 21, md: 22 },
-                fontWeight: "400",
-                fontFamily: "League Spartan, sans-serif",
-                color:'white',
-                   textAlign:'center',
-                   pb:4
-              
-              }}
-            >
-              Celebrating beautiful smiles transformed at Dr. Dombe's Dental Clinic.
-
-
-            </Typography>
+   <Heading data={headList4}/>
      
       {/* Slider */}
       <Slider {...sliderConfig}>

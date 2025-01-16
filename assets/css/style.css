@@ -1,8 +1,5 @@
 
-body {
-  /* background-color: var(--color-background); */
-  background-color: '#f6f7f8';
-}
+
 
 a {
   color: #3fbbc0;
@@ -32,9 +29,6 @@ section {
   overflow: hidden;
 }
 
-.section-bg {
-  background-color: #f7fcfc;
-}
 
 .section-title {
   text-align: center;
