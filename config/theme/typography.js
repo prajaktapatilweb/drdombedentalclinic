@@ -45,7 +45,33 @@ const typography = {
       },
     },
     // Repeat for h4, h5, and h6
-  };
+  
+  h4: {
+    fontSize: '21px',
+    lineHeight: headingLineHeight,
+    fontWeight: 500,
+    '@media (min-width:600px)': {
+      fontSize: '20px',
+    },
+    '@media (min-width:960px)': {
+      fontSize: '21px',
+    },
+  },
+  // Repeat for h4, h5, and h6
+
+h5: {
+    fontSize: '18px',
+    lineHeight: headingLineHeight,
+    fontWeight: 500,
+    '@media (min-width:600px)': {
+      fontSize: '18px',
+    },
+    '@media (min-width:960px)': {
+      fontSize: '18px',
+    },
+  },
+  // Repeat for h4, h5, and h6
+};
   
   export default typography;
   

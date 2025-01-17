@@ -14,6 +14,8 @@ import EmailTwoToneIcon from "@mui/icons-material/EmailTwoTone";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import Heading from './Heading';
 import { headList8 } from '../constants/titlefile';
+import { motion } from "framer-motion";
+
 
 
 const All = [
@@ -63,6 +65,18 @@ const Contact = () => {
       });
   };
 
+  const fadeUpVariants = {
+    hidden: { opacity: 0, y: 100 },  // Initial state: invisible and below the viewport
+    visible: { 
+      opacity: 1, 
+      y: 0,  // Moves up to its original position
+      transition: {
+        duration: 0.8, // Duration of the animation
+        ease: 'easeInOut', // Easing function
+      },
+    },
+  };
+
   return (
     <Box id='contactform' sx={{ backgroundColor: 'white'}}>
       
@@ -99,6 +113,13 @@ const Contact = () => {
   <Container>
 <Heading data={headList8}/>
 <br/>
+ <motion.div
+      className="textcontainer"
+      variants={fadeUpVariants}
+      initial="hidden"         // Start in the hidden state
+      whileInView="visible"    // Animate to the visible state when in view
+      viewport={{ once: true }} // Optionally only animate once
+    >
           <Grid container spacing={2} alignItems='center' justifyContent='center'>
             <Grid item xs={12} md={6}>
               <Grid container spacing={2}>
@@ -257,6 +278,7 @@ const Contact = () => {
               </Card>
             </Grid>
           </Grid>
+          </motion.div>
           </Container>
         </section>
      

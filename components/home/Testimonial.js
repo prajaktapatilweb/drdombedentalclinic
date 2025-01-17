@@ -9,9 +9,8 @@ import IconArrowBack from "@mui/icons-material/ArrowBack";
 import IconArrowForward from "@mui/icons-material/ArrowForward";
 import { MentorCardItem } from "../mentor";
 import { data } from "./mentors.data";
-import { Typography } from "@mui/material";
 import Heading from "./Heading";
-import { headList5, headList6 } from "../constants/titlefile";
+import { headList5} from "../constants/titlefile";
 const SliderArrow = (props) => {
     const { onClick, type, className } = props;
     return (

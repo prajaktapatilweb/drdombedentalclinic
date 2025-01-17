@@ -15,7 +15,7 @@ const headDetails = {
     },
     photos: {
         title: <span style={{ color: 'white' }}>Our Patient Gallery</span>,
-        subtitle: <span style={{ color: 'white' }}>Celebrating beautiful smiles transformed at Dr. Dombe\'s Dental Clinic.</span>
+        subtitle: <span style={{ color: 'white' }}>Celebrating beautiful smiles transformed at Dr. Dombe's Dental Clinic.</span>
 
     },
     testi: {

@@ -110,7 +110,7 @@ const containerVariants = {
         <Grid container spacing={0} sx={{py:6}}  textAlign='center' alignItems='center' justifyContent='center'>  
           <Grid item xs={12}  md={8}>
          {/* Show limited cards on mobile, and all cards on desktop */}
-         <Grid container spacing={0} textAlign='center' alignItems='center' justifyContent='center'>  
+         <Grid container spacing={0} textAlign='center' alignItems='center' justifyContent='center' sx={{pb:3}}>  
          {Details.map((item, i) => (
   <Grid
     item
@@ -167,9 +167,7 @@ const containerVariants = {
       <Typography
         variant="h5"
         sx={{
-          fontWeight: 500,
           color: 'white',
-          fontSize: '20px',
           textAlign: 'center',
         }}
       >
@@ -208,7 +206,6 @@ const containerVariants = {
       ></iframe> */}
     </div>
                   </Grid>
-        {/* Show "Explore More" button only if there are hidden cards */}
       </Grid>
                 </Container >
                 </Box>

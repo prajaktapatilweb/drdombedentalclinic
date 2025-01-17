@@ -94,7 +94,7 @@ const Footer = () => {
 
           </Grid> */}
           <Grid item xs={12} md={5}>
-            <Typography variant="h4" sx={{ fontWeight: "400" }} gutterBottom>
+            <Typography variant="h4"  gutterBottom>
               Get In Touch
             </Typography>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.115072108806!2d73.77606999999999!3d18.6138933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b90a117e7221%3A0x34970e5f1e741bb9!2sDr.%20Dombe&#39;s%20Dental%20Clinic!5e0!3m2!1sen!2sin!4v1736843628406!5m2!1sen!2sin"  width="100%"

@@ -21,9 +21,9 @@ export default function Heading({ data }) {
 
                         </Typography>
                         <Typography
-                            component="h1"
+                            variant="h5"
                             sx={{
-                                fontSize: { xs: 21, md: 22 },
+                                // fontSize: { xs: 21, md: 22 },
                                 fontWeight: "400",
                                 color: 'primary.light',
                                 pb:1
